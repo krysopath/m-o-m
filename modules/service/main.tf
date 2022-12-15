@@ -36,7 +36,7 @@ module "rds" {
 
 output "this" {
   value = {
-    k8s : module.k8s,
-    rds : module.rds
+    k8s : module.k8s.this,
+    rds : module.rds.this,
   }
 }

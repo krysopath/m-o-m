@@ -15,5 +15,5 @@ module "service" {
 }
 
 output "this" {
-  value = module.service
+  value = module.service.this
 }
