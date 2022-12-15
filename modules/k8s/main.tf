@@ -5,7 +5,7 @@ variable "deployment" {
   type = map(any)
 }
 
-output "k8s" {
+output "this" {
   value = {
     configmaps = var.configmaps
     deployment = var.deployment

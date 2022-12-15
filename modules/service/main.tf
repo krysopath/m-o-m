@@ -7,7 +7,7 @@ variable "deployment_overrides" {
 }
 
 variable "replicas" {
-  type = number
+  type    = number
   default = 2
   validation {
     condition     = var.replicas < 3
@@ -30,11 +30,11 @@ module "k8s" {
 
 module "rds" {
   source   = "../rds"
-  type  = "psql"
+  type     = "psql"
   replicas = 2
 }
 
-output "service" {
+output "this" {
   value = {
     k8s : module.k8s,
     rds : module.rds

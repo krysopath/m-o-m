@@ -5,9 +5,9 @@ variable "replicas" {
   type = number
 }
 
-output "k8s" {
+output "this" {
   value = {
-    type  = var.type
+    type     = var.type
     replicas = var.replicas
   }
 }
